@@ -40,5 +40,10 @@ namespace Infrastructure.Utilities
 
 			return isInCollection;
 		}
+
+		public static string ToShortString(this string text)
+		{
+			return text.Substring(0, 140);
+		}
 	}
 }

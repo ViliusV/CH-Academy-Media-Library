@@ -39,7 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Album.cs" />
     <Compile Include="Entities\Book.cs" />
+    <Compile Include="Entities\IStatistics.cs" />
+    <Compile Include="Entities\Song.cs" />
     <Compile Include="Utilities\Extensions.cs" />
     <Compile Include="Entities\MediaItem.cs" />
     <Compile Include="Entities\Movie.cs" />

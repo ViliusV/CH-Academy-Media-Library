@@ -6,15 +6,25 @@ namespace Infrastructure.Entities
     {
 	    public string Title { get; set; }
 	    public DateTime? DateCreated { get; set; }
+	    public bool IsCopyrighted { get; set; }
+
 
 	    protected MediaItem(string title, DateTime? dateCreated)
 	    {
 		    Title = title;
 			DateCreated = dateCreated;
+		    IsCopyrighted = true;
 	    }
 
+		protected MediaItem(string title, DateTime? dateCreated, bool isCopyrighted)
+		{
+			Title = title;
+			DateCreated = dateCreated;
+			IsCopyrighted = isCopyrighted;
+		}
+
 	    protected MediaItem(string title) 
-			: this(title, null)
+			: this(title, null, true)
 	    {
 		    
 	    }
